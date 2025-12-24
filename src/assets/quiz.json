@@ -1,0 +1,121 @@
+{
+  "titulo": "Qual tipo de dev você é?",
+  "perguntas": [
+    {
+      "id": "p1",
+      "texto": "Quando você pega um bug difícil, você...",
+      "alternativas": [
+        {
+          "id": "a1",
+          "texto": "Cria um repro simples e testa hipóteses",
+          "perfisPontuacao": {
+            "analitico": 2,
+            "criativo": 0,
+            "pratico": 1
+          }
+        },
+        {
+          "id": "a2",
+          "texto": "Vai direto no código e tenta ajustar rápido",
+          "perfisPontuacao": {
+            "analitico": 0,
+            "criativo": 0,
+            "pratico": 2
+          }
+        },
+        {
+          "id": "a3",
+          "texto": "Pensa numa solução diferente e refatora",
+          "perfisPontuacao": {
+            "analitico": 1,
+            "criativo": 2,
+            "pratico": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "texto": "Seu jeito favorito de aprender algo novo é...",
+      "alternativas": [
+        {
+          "id": "a1",
+          "texto": "Ler docs e entender o porquê",
+          "perfisPontuacao": {
+            "analitico": 2,
+            "criativo": 0,
+            "pratico": 0
+          }
+        },
+        {
+          "id": "a2",
+          "texto": "Fazer um projeto do zero e ir ajustando",
+          "perfisPontuacao": {
+            "analitico": 0,
+            "criativo": 1,
+            "pratico": 2
+          }
+        },
+        {
+          "id": "a3",
+          "texto": "Ver exemplos e adaptar pra minha realidade",
+          "perfisPontuacao": {
+            "analitico": 1,
+            "criativo": 1,
+            "pratico": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "texto": "Em um time, você se destaca mais em...",
+      "alternativas": [
+        {
+          "id": "a1",
+          "texto": "Planejar, estimar e reduzir riscos",
+          "perfisPontuacao": {
+            "analitico": 2,
+            "criativo": 0,
+            "pratico": 0
+          }
+        },
+        {
+          "id": "a2",
+          "texto": "Entregar rápido e manter o ritmo",
+          "perfisPontuacao": {
+            "analitico": 0,
+            "criativo": 0,
+            "pratico": 2
+          }
+        },
+        {
+          "id": "a3",
+          "texto": "Criar soluções elegantes e melhorar UX",
+          "perfisPontuacao": {
+            "analitico": 0,
+            "criativo": 2,
+            "pratico": 0
+          }
+        }
+      ]
+    }
+  ],
+  "resultados": [
+    {
+      "perfil": "analitico",
+      "titulo": "Dev Analítico",
+      "descricao": "Você curte entender a fundo, medir impacto e encontrar a causa raiz antes de mexer."
+    },
+    {
+      "perfil": "pratico",
+      "titulo": "Dev Prático",
+      "descricao": "Você prioriza entrega e eficiência. Resolve, valida e segue em frente com foco no resultado."
+    },
+    {
+      "perfil": "criativo",
+      "titulo": "Dev Criativo",
+      "descricao": "Você gosta de pensar fora da caixa, refatorar e encontrar soluções elegantes e diferentes."
+    }
+  ]
+}

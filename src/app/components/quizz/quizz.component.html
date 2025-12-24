@@ -1,0 +1,41 @@
+<div class="quizz__container">
+
+  <div class="quizz_logo">
+    <img src="assets/imgs/logo.png" alt="" srcset="">
+    <h3>{{titulo}}</h3>
+  </div>
+
+  <div *ngIf="carregando" class="quizz_loading">
+    <p>Carregando...</p>
+  </div>
+
+  <div *ngIf="!carregando && !finalizado && perguntaAtual" class="quizz_progresso">
+    <div class="quizz_progresso_info">
+      <span>Pergunta {{indicePergunta + 1}} de {{totalPerguntas}}</span>
+      <button class="btn-restart" (click)="reiniciarQuiz()">Reiniciar</button>
+    </div>
+    <div class="quizz_progresso_barra">
+      <div class="quizz_progresso_barra_preenchida" [style.width.%]="progressoPorcentagem"></div>
+    </div>
+  </div>
+
+  <div *ngIf="!carregando && !finalizado && perguntaAtual" class="quizz_questions">
+    <h3>{{perguntaAtual.texto}}</h3>
+  </div>
+
+  <div *ngIf="!carregando && !finalizado && perguntaAtual" class="quizz_options">
+    <button
+      *ngFor="let alternativa of perguntaAtual.alternativas"
+      (click)="escolherAlternativa(perguntaAtual.id, alternativa.id)"
+      class="btn-option"
+    >
+      {{alternativa.texto}}
+    </button>
+  </div>
+
+  <div *ngIf="!carregando && finalizado" class="quizz_results">
+    <h1>O seu resultado é:</h1>
+    <p>{{textoResultado}}</p>
+    <button class="btn-restart" (click)="reiniciarQuiz()">Fazer de novo</button>
+  </div>
+</div>
